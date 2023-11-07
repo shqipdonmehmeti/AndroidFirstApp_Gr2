@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"  >-->
+
+
+<!--  <EditText-->
+<!--      android:id="@+id/etPhoneNumber"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:inputType="numberPassword"-->
+<!--      android:hint="Please write your phone number"-->
+<!--      android:layout_margin="10dp"-->
+<!--      />-->
+
+
+<!--  <Button-->
+<!--      android:id="@+id/btnSubmit"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:text="Submit"-->
+<!--      android:layout_below="@id/etPhoneNumber"-->
+<!--      android:textColor="@color/black"-->
+<!--      android:layout_centerHorizontal="true"-->
+<!--      />-->
+
+<!--  <ImageView-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:src="@drawable/ic_launcher_background"-->
+<!--      android:layout_below="@id/btnSubmit"-->
+<!--      android:layout_centerHorizontal="true"-->
+<!--      />-->
+
+
+
+<!--</RelativeLayout>-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="I am button 1"
+      android:layout_weight="2"
+      />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am button 2"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
+
+
+
