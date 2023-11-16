@@ -25,79 +25,141 @@
         android:layout_weight="3"
         android:layout_margin="10dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:textColor="@color/Black"
-            android:textStyle="bold"
-            />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Email"-->
+<!--            android:textColor="@color/Black"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
 
-        <EditText
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/DarkGray"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            />-->
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/DarkGray"
-            android:inputType="textEmailAddress"
-            android:layout_marginTop="5dp"
-            />
+            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+            >
 
-        <TextView
-            android:layout_width="wrap_content"
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Username"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="@color/Black"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/DarkGray"-->
+<!--            android:inputType="text"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            />-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username"
             android:layout_marginTop="10dp"
-            android:textColor="@color/Black"
-            android:textStyle="bold"
-            />
+            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+            >
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Password"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="@color/Black"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/DarkGray"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:inputType="textPassword"-->
+<!--            />-->
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/DarkGray"
-            android:inputType="text"
-            android:layout_marginTop="5dp"
-            />
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/Red"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+            >
 
-        <TextView
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please write your email here"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Date Of Birth"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="@color/Black"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/DarkGray"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:inputType="time"-->
+<!--            />-->
+
+        <DatePicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/Black"
-            android:textStyle="bold"
+            android:calendarViewShown="false"
+            android:spinnersShown="true"
+            android:datePickerMode="spinner"
             />
 
-        <EditText
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sign Up"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:enabled="false"-->
+<!--            />-->
+        
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/DarkGray"
-            android:layout_marginTop="5dp"
-            android:inputType="textPassword"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Date Of Birth"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/Black"
-            android:textStyle="bold"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/DarkGray"
-            android:layout_marginTop="5dp"
-            android:inputType="time"
-            />
-
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:layout_marginTop="15dp"
+            android:text="S I G N U P"
             android:enabled="false"
             />
 
