@@ -66,7 +66,7 @@
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/password"
         android:text="Log In"
-        android:enabled="false"
+        android:enabled="true"
         android:alpha="0.5"
         android:textAllCaps="false"/>
 <TextView

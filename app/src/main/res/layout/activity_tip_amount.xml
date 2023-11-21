@@ -5,11 +5,10 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:orientation="vertical"
-    android:background="@drawable/goku"
-
     tools:context=".TipAmountActivity">
 
     <EditText
+        android:id="@+id/etCostOfService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Cost of service" />
@@ -23,20 +22,24 @@
 
 
     <RadioGroup
+        android:id="@+id/rgServiceOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <RadioButton
+            android:id="@+id/rbAmazing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Amazing (20%)"
             />
         <RadioButton
+            android:id="@+id/rbGood"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Good (18%)"
             />
         <RadioButton
+            android:id="@+id/rbOkay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Okay (15%)"
@@ -55,7 +58,8 @@
             android:text="Round up tip?"
             />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swRoundUpTip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -64,6 +68,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate"
@@ -72,6 +77,7 @@
         />
 
     <TextView
+        android:id="@+id/tvTipAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tip amount"
