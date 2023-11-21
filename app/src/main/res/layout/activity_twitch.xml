@@ -106,6 +106,7 @@
 <!--            />-->
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputLayoutPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -140,6 +141,7 @@
 <!--            />-->
 
         <DatePicker
+            android:id="@+id/datePicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:calendarViewShown="false"
@@ -157,10 +159,18 @@
 <!--            />-->
         
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTwitchSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="S I G N U P"
-            android:enabled="false"
+            />
+
+        <TextView
+            android:id="@+id/tvShowAllData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/Black"
             />
 
 
