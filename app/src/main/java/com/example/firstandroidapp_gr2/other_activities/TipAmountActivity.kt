@@ -1,13 +1,13 @@
-package com.example.firstandroidapp_gr2
+package com.example.firstandroidapp_gr2.other_activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.RadioGroup
-import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.SwitchCompat
+import com.example.firstandroidapp_gr2.R
 import kotlin.math.ceil
 
 class TipAmountActivity : AppCompatActivity() {

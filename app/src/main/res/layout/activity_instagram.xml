@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/LightPink"
-    tools:context=".InstagramActivity">
+    tools:context=".social_network_activities.InstagramActivity">
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideLineHorizontal1"
         android:layout_width="wrap_content"

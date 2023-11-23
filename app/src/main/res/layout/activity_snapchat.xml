@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="8"
-    tools:context=".SnapchatActivity">
+    tools:context=".social_network_activities.SnapchatActivity">
 
 
     <LinearLayout

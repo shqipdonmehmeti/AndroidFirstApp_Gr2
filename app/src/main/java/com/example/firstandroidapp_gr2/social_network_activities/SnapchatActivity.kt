@@ -1,9 +1,10 @@
-package com.example.firstandroidapp_gr2
+package com.example.firstandroidapp_gr2.social_network_activities
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.example.firstandroidapp_gr2.R
 
 class SnapchatActivity : AppCompatActivity() {
     private lateinit var btnLogin: AppCompatButton

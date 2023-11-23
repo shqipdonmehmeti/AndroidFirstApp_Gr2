@@ -6,7 +6,7 @@
     android:background="@drawable/daredevil2"
     android:orientation="vertical"
     android:weightSum="2"
-    tools:context=".NetflixActivity">
+    tools:context=".social_network_activities.NetflixActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAndroidApp_Gr2"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".TwitchActivity"
-            android:exported="true">
+            android:name=".social_network_activities.TwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen_order.FirstScreenActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,43 +25,36 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NetflixConstraintActivity"
-            android:exported="true">
+            android:name=".layout_activities.NetflixConstraintActivity"
+            android:exported="true" >
         </activity>
         <activity
-            android:name=".SnapchatActivity"
-            android:exported="true">
-
+            android:name=".social_network_activities.SnapchatActivity"
+            android:exported="true" >
         </activity>
         <activity
-            android:name=".TipAmountActivity"
-            android:exported="true">
-
+            android:name=".other_activities.TipAmountActivity"
+            android:exported="true" >
         </activity>
         <activity
-            android:name=".NetflixActivity"
-            android:exported="true">
-
+            android:name=".social_network_activities.NetflixActivity"
+            android:exported="true" >
         </activity>
         <activity
-            android:name=".InstagramActivity"
-            android:exported="true">
-
+            android:name=".social_network_activities.InstagramActivity"
+            android:exported="true" >
         </activity>
         <activity
-            android:name=".LinearLayoutActivity"
-            android:exported="true">
-
+            android:name=".layout_activities.LinearLayoutActivity"
+            android:exported="true" >
         </activity>
         <activity
-            android:name=".RelativeLayoutActivity"
-            android:exported="true">
-
+            android:name=".layout_activities.RelativeLayoutActivity"
+            android:exported="true" >
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
+            android:name=".other_activities.MainActivity"
+            android:exported="true" >
         </activity>
     </application>
 
