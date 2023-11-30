@@ -4,5 +4,6 @@ data class FootballPlayer(
     val photo: Int,
     val firstName: String,
     val lastName: String,
-    val age: Int
+    val age: Int,
+    val description : String? = null
 )
